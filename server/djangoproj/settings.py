@@ -28,7 +28,11 @@ SECRET_KEY =\
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'xxxx-8000.proxy.cognitiveclass.ai']
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    '.proxy.cognitiveclass.ai',
+]
 CSRF_TRUSTED_ORIGINS = ['https://xxxx-8000.proxy.cognitiveclass.ai']
 
 REST_FRAMEWORK = {
